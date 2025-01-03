@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="contest.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="contest.html">Contest</a>
+            <a href="faqs.html">FAQ's</a>
+            <a href="leaderboard.html">Leaderboard</a>
+            <a href="practiceArea.html">Practice</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Login / Sign Up</a>
+            <a href="history.html">Contest History</a>
+        </div>
+        <div class="nav-right">
+            TypeRivals
+        </div>
+    </div>
+    <div class="container">
+        <h1>Typing Contest</h1>
+        <div class="selection-group">
+            <div id="duration-selection">
+                <label>Duration:</label>
+                <button data-duration="30">30 Seconds</button>
+                <button data-duration="60">1 Minute</button>
+                <button data-duration="120">2 Minutes</button>
+            </div>
+            <div id="difficulty-selection">
+                <label>Difficulty:</label>
+                <button data-difficulty="easy">Easy</button>
+                <button data-difficulty="medium">Medium</button>
+                <button data-difficulty="hard">Hard</button>
+            </div>
+        </div>
+        <button id="start-button">Start Game</button>
+        <div id="text-container">
+            <div id="text-display"></div>
+            <textarea id="user-input" autofocus></textarea>
+        </div>
+        <div id="timer">Time Left: <span id="time-left"></span></div>
+        <div id="results" style="display: none;">
+            <h2>Results</h2>
+            <p>WPM: <span id="wpm"></span></p>
+            <p>Score: <span id="score"></span></p>
+            <p>Accuracy: <span id="accuracy"></span>%</p>
+            <p>Difficulty: <span id="difficulty-result"></span></p>
+            <p>Duration: <span id="duration-result"></span> seconds</p>
+            <button id="restart-button">Restart</button>
+            <button id="home-button" onclick="location.href='index.html'">Home</button>
+            <button id="history-button" onclick="location.href='history.html'">History</button>
+            
+        </div>
+    </div>
+
+    <script src="contest.js" type="module" defer></script>
+</body>
+
+</html> 

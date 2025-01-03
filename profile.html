@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="contest.html">Contest</a>
+            <a href="faqs.html">FAQ's</a>
+            <a href="leaderboard.html">Leaderboard</a>
+            <a href="practiceArea.html">Practice</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Login / Sign Up</a>
+            <a href="history.html">Contest History</a>
+        </div>
+        <div class="nav-right">
+            TypeRivals
+        </div>
+    </div>
+    <div class="profile-container">
+        <h2>User Profile</h2>
+        <img id="profile-image" class="profile-picture" src="Profile Pics" alt="Profile Picture">
+
+        <div class="profile-picture-options" id="profile-picture-options">
+            <img src="/Profile Pics/Animal1.jpg" alt="Bear Avatar" class="profile-picture-option" data-image="Animal1.jpg">
+            <img src="/Profile Pics/Animal2.jpg" alt="Panda Avatar" class="profile-picture-option" data-image="Animal2.jpg">
+            <img src="/Profile Pics/Animal3.jpg" alt="Panda Avatar 2" class="profile-picture-option" data-image="Animal3.jpg">
+            <img src="/Profile Pics/Animal4.jpg" alt="Panda Avatar 3" class="profile-picture-option" data-image="Animal4.jpg">
+            <img src="/Profile Pics/Animal5.jpg" alt="Fox Avatar" class="profile-picture-option" data-image="Animal5.jpg">
+            <img src="/Profile Pics/Animal6.jpg" alt="Rabbit Avatar" class="profile-picture-option" data-image="Animal6.jpg">
+            <img src="/Profile Pics/Animal7.jpg" alt="Lion Avatar" class="profile-picture-option" data-image="Animal7.jpg">
+            <img src="Profile Pics/Animal8.jpg" alt="Mouse Avatar" class="profile-picture-option" data-image="Animal8.jpg">
+            <img src="Profile Pics/Animal9.jpg" alt="Elephant Avatar" class="profile-picture-option" data-image="Animal9.jpg">
+        </div>
+        <div class="input-group">
+            <label>Username:</label>
+            <span id="display-username"></span>
+        </div>
+        <div class="input-group">
+            <label>Email:</label>
+            <span id="display-email"></span>
+        </div>
+        <div class="input-group">
+            <label>Best Score:</label>
+            <span id="display-best-score"></span>
+        </div>
+        <div class="input-group">
+            <label>Average Score:</label>
+            <span id="display-average-score"></span>
+        </div>
+        <div class="input-group">
+            <label>Average WPM:</label>
+            <span id="display-average-wpm"></span>
+        </div>
+        <div class="input-group">
+            <label>Total Contests Given:</label>
+            <span id="display-total-tests"></span>
+        </div>
+        <button id="save-profile">Save Profile</button>
+    </div>
+    <script type="module" src="profile.js" defer></script>
+</body>
+
+</html>
